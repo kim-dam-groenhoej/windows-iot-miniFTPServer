@@ -92,6 +92,12 @@
     <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="FTPServer\ClientConnection.cs" />
+    <Compile Include="FTPServer\FtpServer.cs" />
+    <Compile Include="FTPServer\LogEntry.cs" />
+    <Compile Include="FTPServer\RateLimitingStream.cs" />
+    <Compile Include="FTPServer\User.cs" />
+    <Compile Include="FTPServer\UserStore.cs" />
     <Compile Include="StartupTask.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -99,6 +105,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="FTPServer\SharpFtpServer.log4net" />
     <None Include="packages.config" />
     <None Include="windows-iot-miniFTPServer_TemporaryKey.pfx" />
   </ItemGroup>
@@ -108,6 +115,10 @@
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
     <Content Include="Assets\WideLogo.scale-100.png" />
+    <Content Include="FTPServer\rfc2228.txt" />
+    <Content Include="FTPServer\rfc2389.txt" />
+    <Content Include="FTPServer\rfc3659.txt" />
+    <Content Include="FTPServer\rfc959.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Numerics.Vectors, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -116,6 +127,10 @@
     </Reference>
     <Reference Include="System.Numerics.Vectors.WindowsRuntime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.WindowsRuntime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Handles, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Handles.4.0.0-beta-22816\lib\portable-wpa81+wp80+win80+net45+aspnetcore50\System.Runtime.Handles.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
