@@ -7,8 +7,8 @@
     <ProjectGuid>{80B4A8E2-0E90-4C68-B3B9-58D4FC793AAE}</ProjectGuid>
     <OutputType>winmdobj</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>windows_iot_miniFTPServer</RootNamespace>
-    <AssemblyName>windows-iot-miniFTPServer</AssemblyName>
+    <RootNamespace>windowsiotminiFTPServer</RootNamespace>
+    <AssemblyName>windowsiotminiFTPServer</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.10069.0</TargetPlatformVersion>

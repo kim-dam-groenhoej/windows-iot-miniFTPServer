@@ -7,7 +7,7 @@ using Windows.ApplicationModel.Background;
 
 // The Background Application template is documented at http://go.microsoft.com/fwlink/?LinkID=533884&clcid=0x409
 
-namespace windows_iot_miniFTPServer
+namespace windowsiotminiFTPServer
 {
     public sealed class StartupTask : IBackgroundTask
     {
